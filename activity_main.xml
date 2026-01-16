@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Item Name Input -->
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Item Name"
+            android:inputType="textPersonName" />
+
+        <!-- Item Type Spinner -->
+        <Spinner
+            android:id="@+id/spinnerItemType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- Quantity Spinner -->
+        <Spinner
+            android:id="@+id/spinnerQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- Add Item Button -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item"
+            android:layout_marginTop="16dp" />
+
+        <!-- Update Mode -->
+        <Switch
+            android:id="@+id/switchUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Update"
+            android:layout_marginTop="24dp" />
+
+        <Spinner
+            android:id="@+id/spinnerUpdateId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Item"
+            android:layout_marginTop="8dp" />
+
+        <!-- Delete Mode -->
+        <Switch
+            android:id="@+id/switchDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Delete"
+            android:layout_marginTop="24dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDeleteId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Item"
+            android:layout_marginTop="8dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inventory List"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:paddingBottom="4dp" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
